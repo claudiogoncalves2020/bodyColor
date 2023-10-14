@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light switch</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+
+<body>
+    <div class="container">
+        <button class="black" id="btn-black">Black</button>
+        <button class="White" id="btn-white">White</button>
+
+    </div>
+
+    <script>
+
+        document.getElementById("btn-black").addEventListener("click", () => {
+            document.querySelector("body").setAttribute("class", "black");
+        });
+
+        document.getElementById("btn-white").addEventListener("click", () => {
+            document.querySelector("body").setAttribute("class", "white");
+        });
+
+
+    </script>
